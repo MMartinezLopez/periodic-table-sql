@@ -24,7 +24,7 @@ then
     do
       echo $PROPERTIES | while read MASS BAR MELTPOINT BAR BOILPOINT
       do
-        echo -e "The elemen with atomic number $(echo $ELEM_ID | sed 's/ |/"/') is $NAME ($SYMBOL). It's a $(echo $TYPE | sed 's/ |/"/'), with a mas of $MASS amu. $NAME has a melting point of $MELTPOINT celsius and a boiling point of $BOILPOINT celsius."
+        echo -e "The element with atomic number $(echo $ELEM_ID | sed 's/ |/"/') is $NAME ($SYMBOL). It's a $(echo $TYPE | sed 's/ |/"/'), with a mass of $MASS amu. $NAME has a melting point of $MELTPOINT celsius and a boiling point of $BOILPOINT celsius."
       done
     done
   fi
