@@ -15,7 +15,7 @@ then
 
   if [[ -z $ELEM_ID ]]
   then
-    echo "Not in database"
+    echo "I could not find that element in the database."
   else
     ELEMENT=$($PSQL "SELECT symbol, name FROM elements WHERE atomic_number=$ELEM_ID;")
     PROPERTIES=$($PSQL "SELECT atomic_mass, melting_point_celsius, boiling_point_celsius FROM properties WHERE atomic_number=$ELEM_ID;")
